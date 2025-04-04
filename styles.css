@@ -2,7 +2,7 @@
 
 /* Estilo general del navbar */
 #navbar {
-    background-color: black;
+    background-color: #00040D;
     display: flex;
     justify-content: space-between; /* Distribuir espacio entre izquierda y derecha */
     align-items: center; /* Centrar los elementos verticalmente */
