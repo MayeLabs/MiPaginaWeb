@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+
+#navbar{
+    background: LightSkyBlue;
+    height:60px;
+    width:100%;
+    line-height: 50px;
+    font-size:30px;
+    text-align:end;
+}
+
+.nav{
+  margin-left:15%;
+  margin-right: 10px;
+  text-decoration: none;
+  color:black;
+   font-family: 'Dancing Script', cursive;
+}
+
+.imgm{
+  width:140px;
+  float:left;
+  margin-left:5%;
+}
+
+img{
+  max-width:100%;
+  higth: auto;
+  display: block;
+  
+}
+
+h1{
+  color:#B844D5;
+  text-align:center;
+  font-size: 30px;
+}
+
+#contenedor-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom:10%;
+  margin-left:15%;
+  margin-top:8%;
+}
+.img_drive{
+  width:500px;
+  height:300px;
+  margin-left:-15%;
+}
+
+#img-1{
+ align-self:center; 
+ margin-bottom:8%;
+ font-size:35px;
+ font-family: 'Dancing Script', cursive;
+ color: black;
+}
+
+#img-2{
+ align-self:center; 
+ margin-bottom:8%;
+ font-size:35px;
+ font-family: 'Dancing Script', cursive;
+ color: black;
+}
+
+#img-3{
+ align-self:center;
+  margin-bottom:8%;
+   font-size:35px;
+ font-family: 'Dancing Script', cursive;
+ color: black;
+}
+
+#img-4{
+ align-self:center;
+ margin-bottom:8%;
+  font-size:35px;
+ font-family: 'Dancing Script', cursive;
+ color: black;
+}
+
+.letra{
+  
+  font-size:25px;
+  color:black;
+  text-align:center;
+}
+
+#contacts{
+  margin-top:-145px;
+}
+
+@media (max-width: 300px) {
+   h1{
+    color:#B844D5;
+    text-align:center;
+    font-size: 20px;
+    }
+
+    #project-tile{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom:10%;
+    margin-left:15%;
+    margin-top:8%;
+    }
+    .img_drive{
+    width:300px;
+    height:100px;
+    margin-left:-15%;
+    }
+
+    #img-1{
+    align-self:center; 
+    margin-bottom:8%;
+    font-size:25px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    }
+
+    #img-2{
+    align-self:center; 
+    margin-bottom:8%;
+    font-size:25px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    }
+
+    #img-3{
+    align-self:center;
+    margin-bottom:8%;
+    font-size:25px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    }
+
+    #img-4{
+    align-self:center;
+    margin-bottom:8%;
+    font-size:25px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    }
+
+    .letra{
+    
+    font-size:20px;
+    color:black;
+    text-align:center;
+    }
+  }
