@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
 
-/* Estilo general del navbar */
+/* ---- Navbar - Header -------------- */
+/* ----------------------------------- */
 #navbar {
     background-color: #00040D;
     display: flex;
@@ -47,6 +48,7 @@
 #navbar img {
     height: 50px;
 }
+/* ----------------------------------- */
 
 /* Estilo de los proyectos */
 #contenedor-flex {
@@ -80,6 +82,8 @@ h1 {
 }
 
 
+/* ---- Cohete  ---------------------- */
+/* ----------------------------------- */
 #rocket {
     background: none;
     position: absolute;
@@ -89,8 +93,7 @@ h1 {
     z-index: 20;
 }
 
-
-/* Boton despegar */
+/* ---- Cohete -  Botón "DESPEGAR" --- */
 #start-button {
     position: absolute;
     top: 15%;      /* Ajusta según la posición deseada cerca del cohete */
@@ -98,7 +101,7 @@ h1 {
     font-size: 1.2rem;
     padding: 5px 12px;
     background-color: #032059;   /* Color principal de fondo */
-    color: #5CB9F2;              /* Color de texto */
+    color: #ffffff;;              /* Color de texto */
     border: 1px solid #ffffff;    /* Borde con uno de los acentos */
     border-radius: 10px;
     cursor: pointer;
@@ -112,62 +115,4 @@ h1 {
   }
   
 
-/* Media Query para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    /* Ajustes para que los elementos del navbar se apilen verticalmente */
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start; /* Alinea los elementos a la izquierda */
-        padding: 20px;
-    }
-
-    #navbar .left, #navbar .right {
-        width: 100%;
-        justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
-        margin-bottom: 10px;
-    }
-
-    #navbar .nav {
-        margin-left: 0;
-        margin-right: 20px;
-        font-size: 14px; /* Ajusta el tamaño de fuente en móvil */
-    }
-
-    #navbar .imgm {
-        width: 100px; /* Reducción de tamaño de la imagen */
-        margin-left: 0;
-    }
-
-    /* Ajustar el tamaño de la imagen de los proyectos */
-    .img_drive {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-
-   /* Estilo para el icono del menú hamburguesa */
-  .hamburger {
-      display: none; /* Oculto por defecto */
-      font-size: 30px;
-      color: white;
-      cursor: pointer;
-  }
-
-  
-    /* Mostrar los enlaces cuando el menú de hamburguesa esté activo */
-    #navbar.active .right {
-        display: flex; /* Los enlaces se muestran */
-    }
-
-    /* Ajustar el tamaño de la imagen de los proyectos */
-    .img_drive {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-
-    h1 {
-        font-size: 20px; /* Ajustar el tamaño del título */
-    }
-}
 

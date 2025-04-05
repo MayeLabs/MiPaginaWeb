@@ -1,0 +1,61 @@
+
+@media (max-width: 768px) {
+    
+    /* Navbar: Ajustes para que los elementos se apilen verticalmente */
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        padding: 20px;
+    }
+
+    #navbar .left, #navbar .right {
+        width: 100%;
+        justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
+        margin-bottom: 10px;
+    }
+
+    #navbar .nav {
+        margin-left: 0;
+        margin-right: 20px;
+        font-size: 14px; /* Ajusta el tamaño de fuente en móvil */
+    }
+
+    #navbar .imgm {
+        width: 100px; /* Reducción de tamaño de la imagen */
+        margin-left: 0;
+    }
+
+    /* Ajustar el tamaño de la imagen de los proyectos */
+    .img_drive {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+   /* Estilo para el icono del menú hamburguesa */
+  .hamburger {
+      display: none; /* Oculto por defecto */
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+  }
+
+  
+    /* Mostrar los enlaces cuando el menú de hamburguesa esté activo */
+    #navbar.active .right {
+        display: flex; /* Los enlaces se muestran */
+    }
+
+    /* Ajustar el tamaño de la imagen de los proyectos */
+    .img_drive {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 20px; /* Ajustar el tamaño del título */
+    }
+}
+
+
