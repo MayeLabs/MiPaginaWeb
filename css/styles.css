@@ -79,12 +79,6 @@ h1 {
     font-size: 30px;
 }
 
-body {
-    margin: 0;
-    overflow: hidden;
-}
-
-
 
 #rocket {
     background: none;
@@ -95,6 +89,28 @@ body {
     z-index: 20;
 }
 
+
+/* Boton despegar */
+#start-button {
+    position: absolute;
+    top: 15%;      /* Ajusta según la posición deseada cerca del cohete */
+    left: 12%;     /* Ajusta según la posición deseada cerca del cohete */
+    font-size: 1.2rem;
+    padding: 5px 12px;
+    background-color: #032059;   /* Color principal de fondo */
+    color: #5CB9F2;              /* Color de texto */
+    border: 1px solid #ffffff;    /* Borde con uno de los acentos */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+  }
+  
+  #start-button:hover {
+    background-color: #021D40;  /* Color al pasar el cursor */
+    transform: scale(1.05);
+  }
+  
 
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
@@ -154,3 +170,4 @@ body {
         font-size: 20px; /* Ajustar el tamaño del título */
     }
 }
+
