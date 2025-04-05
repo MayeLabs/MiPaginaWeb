@@ -79,6 +79,23 @@ h1 {
     font-size: 30px;
 }
 
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+#rocket {
+    background: none;
+    position: absolute;
+    width: 150px; /* Ajusta el tamaño */
+    top: 20%;
+    left: 10%;
+    z-index: 20;
+}
+
+
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     /* Ajustes para que los elementos del navbar se apilen verticalmente */
@@ -135,12 +152,5 @@ h1 {
 
     h1 {
         font-size: 20px; /* Ajustar el tamaño del título */
-    }
-    #rocket {
-        background: transparent;
-        position: absolute;
-        left: 50px;
-        top: 50px;
-        width: 100px;
     }
 }
