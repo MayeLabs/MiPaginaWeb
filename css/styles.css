@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #00040d;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ---- Navbar - Header -------------- */
 /* ----------------------------------- */
 #navbar {
@@ -29,7 +42,7 @@
     color: white;
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
-    font-size: 25px; /* Puedes ajustar el tamaño */
+    font-size: 25px;
 }
 
 #navbar .right {
@@ -50,7 +63,9 @@
 }
 /* ----------------------------------- */
 
-/* Estilo de los proyectos */
+
+/* ---- Estilos - Proyectos ---------- */
+/* ----------------------------------- */
 #contenedor-flex {
     display: flex;
     justify-content: space-between;
@@ -94,6 +109,7 @@ h1 {
 }
 
 /* ---- Cohete -  Botón "DESPEGAR" --- */
+/* ----------------------------------- */
 #start-button {
     position: absolute;
     top: 15%;      /* Ajusta según la posición deseada cerca del cohete */

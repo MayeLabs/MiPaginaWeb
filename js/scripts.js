@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const rocket = document.getElementById("rocket");
     const startButton = document.getElementById("start-button");
     const startScreen = document.getElementById("start-screen");
+    const hamburger = document.getElementById("hamburger-menu");
+    const navbar = document.getElementById("navbar");
 
     let x = 50;
     let y = 50;
@@ -40,4 +42,12 @@ document.addEventListener("DOMContentLoaded", function() {
         rocket.style.left = x + "px";
         rocket.style.top = y + "px";
     });
+
+    hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+      
 });
+
+
+

@@ -1,11 +1,10 @@
-
+/* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-    
-    /* Navbar: Ajustes para que los elementos se apilen verticalmente */
+    /* Ajustes para que los elementos del navbar se apilen verticalmente */
     #navbar {
         flex-direction: column;
         align-items: flex-start; /* Alinea los elementos a la izquierda */
-        padding: 10px 20px;
+        padding: 10px 20px; /* Ajusta el padding */
     }
 
     #navbar .left, #navbar .right {
@@ -26,49 +25,44 @@
         margin-left: 0;
     }
 
-    /* Ajustar el tamaño de la imagen de los proyectos */
-    .img_drive {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-
-   /* Estilo para el icono del menú hamburguesa */
+    /* Hacer que el icono de la hamburguesa sea visible solo en pantallas pequeñas */
     .hamburger {
-      display: none; /* Oculto por defecto */
-      font-size: 30px;
-      color: white;
-      cursor: pointer;
-      margin-left: auto;
+        display: block; /* Mostrar icono de hamburguesa */
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
     }
 
-        /* Ocultar los enlaces cuando el menú de hamburguesa está activo */
+    /* Ocultar los enlaces cuando el menú de hamburguesa está activo */
     #navbar.active .right {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
     }
-
-  
-    /* Mostrar los enlaces cuando el menú de hamburguesa esté activo */
-    #navbar.active .right {
-        display: flex; /* Los enlaces se muestran */
-    }
-
-    /* Ajustar el tamaño de la imagen de los proyectos */
-    .img_drive {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-
+    /* Título */
     h1 {
-        font-size: 20px; /* Ajustar el tamaño del título */
+        font-size: 20px;
+    }
+    
+    /* Botón DESPEGAR */
+    #start-button {
+        top: 20%;
+        left: 5%;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    
+    /* Cohete */
+    #rocket {
+        width: 100px;
+        top: 15%;
+        left: 5%;
     }
 }
 
-
+/* Media Query para pantallas muy pequeñas (como móviles en modo retrato) */
 @media (max-width: 480px) {
     #navbar {
         padding: 10px 10px;
@@ -81,5 +75,17 @@
     #navbar .nav {
         font-size: 12px; /* Ajusta aún más el tamaño para pantallas muy pequeñas */
     }
+    #start-button {
+        top: 15%;
+        left: 5%;
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+    
+    /* Cohete */
+    #rocket {
+        width: 80px;
+        top: 10%;
+        left: 5%;
+    }
 }
-
