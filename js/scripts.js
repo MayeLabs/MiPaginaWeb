@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("keydown", function(event) {
         if (!gameStarted) return;
         else {
-            if ( event.key === "ArrowUp" || event.key === "ArrowDown" )
+            if ( event.key === "ArrowUp" || event.key === "ArrowDown" ||
+                 event.key === "ArrowLeft" || event.key === "ArrowRight"  )
             {
                     event.preventDefault();
             }

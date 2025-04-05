@@ -5,7 +5,7 @@
     #navbar {
         flex-direction: column;
         align-items: flex-start; /* Alinea los elementos a la izquierda */
-        padding: 20px;
+        padding: 10px 20px;
     }
 
     #navbar .left, #navbar .right {
@@ -18,6 +18,7 @@
         margin-left: 0;
         margin-right: 20px;
         font-size: 14px; /* Ajusta el tamaño de fuente en móvil */
+        padding: 5px 0;
     }
 
     #navbar .imgm {
@@ -33,12 +34,21 @@
     }
 
    /* Estilo para el icono del menú hamburguesa */
-  .hamburger {
+    .hamburger {
       display: none; /* Oculto por defecto */
       font-size: 30px;
       color: white;
       cursor: pointer;
-  }
+      margin-left: auto;
+    }
+
+        /* Ocultar los enlaces cuando el menú de hamburguesa está activo */
+    #navbar.active .right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
 
   
     /* Mostrar los enlaces cuando el menú de hamburguesa esté activo */
@@ -58,4 +68,18 @@
     }
 }
 
+
+@media (max-width: 480px) {
+    #navbar {
+        padding: 10px 10px;
+    }
+
+    #navbar .nav-name {
+        font-size: 20px;
+    }
+
+    #navbar .nav {
+        font-size: 12px; /* Ajusta aún más el tamaño para pantallas muy pequeñas */
+    }
+}
 
