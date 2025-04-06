@@ -131,4 +131,12 @@ h1 {
   }
   
 
-
+/* ---- Menu - Hamburguesa ----------- */
+/* ----------------------------------- */
+.hamburger {
+    display: none; /* oculto por defecto en desktop */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
